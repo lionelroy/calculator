@@ -38,9 +38,9 @@ header {
   display: grid;
   justify-content: center;
   align-content: center;
-  margin-top: 2rem;
-  margin-bottom: 1%;
-  min-height: 100vh;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  min-height: 90vh;
   grid-template-columns: repeat(4, 100px);
   grid-template-rows: minmax(120px, auto) repeat(5, 100px);
 }
