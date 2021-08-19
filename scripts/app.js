@@ -42,7 +42,7 @@ class Calculator {
       case "-":
         computation = prev - current
         break
-      case "/":
+      case "÷":
         computation = prev / current
         break
       case "x":
@@ -85,8 +85,6 @@ class Calculator {
     }
   }
 }
-
-
 
 const numberButtons = document.querySelectorAll("[data-number]");
 const operationButtons = document.querySelectorAll("[data-operation]");
