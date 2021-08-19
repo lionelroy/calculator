@@ -1,0 +1,107 @@
+* *, *::before, *::after {
+  box-sizing: border-box;
+  font-family: 'Allerta Stencil', sans-serif;
+  font-weight: normal;
+} 
+
+body {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  background: linear-gradient(60deg, #ffe600, #f3d23f,#f0b128, #faaa15, #e08818, #f78748, #ee551d, #e93916, #f0051d);
+  background-size: 300% 300%;
+  background-position: 0 50%;
+  border-radius: calc(2 * var(--border-width));
+  animation: moveGradient 8s alternate infinite;
+}
+
+header {
+  font-size: 4rem;
+  text-align: center;
+  text-shadow: 6px 3px white;
+  padding: 1rem;
+  background: linear-gradient(60deg, #ed40c8, #d25ced, #9d43f7, #9860f7, #475ae0, #60abf7, #43c4f7, #78f6e0, #48f0b8);
+  background-size: 300% 300%;
+  background-position: 0 50%;
+  border-radius: calc(2 * var(--border-width));
+  animation: moveGradient 8s alternate infinite;
+}
+
+
+@keyframes moveGradient {
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.calculator-grid {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  margin-top: 2rem;
+  margin-bottom: 1%;
+  min-height: 100vh;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+}
+
+.calculator-grid > button {
+  cursor: pointer;
+  font-size: 2rem;
+  border: 1px solid white;
+  outline: none;
+  background-color: rgba(255, 255, 255, .75);
+}
+
+.calculator-grid > button:hover {
+  background-color: rgba(255, 255, 255, .9);
+}
+
+.span-two {
+  grid-column: span 2;
+}
+
+.output {
+  grid-column: 1 / -1;
+  background-color: rgba(0, 0, 0, .75);
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 10px;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.output .previous-operand {
+  color: rgba(255, 255, 255, .75);
+  font-size: 1.5rem;
+}
+
+.output .current-operand {
+  color: white;
+  font-size: 2.5rem;
+}
+
+footer{
+  font-size: 25px;
+  bottom: 0;
+  margin-bottom: 1rem;
+  justify-content: center;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+#gh-logo{
+  width: 35px;
+  height: 35px;
+  margin-bottom: -9px;
+  margin-right: 10px;
+}

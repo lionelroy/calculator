@@ -1,45 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+  <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
-    <link href= "styles/main.css" rel="stylesheet">  
+    <link href="styles/main.css" rel="stylesheet">  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap" rel="stylesheet"> 
 </head>
-
 <body>
-  <header>
-    <h1 class="Title">Calculator</h1>
-  </header>
-
-  <main>
-    <div class="display">
-      <div id="history"></div>
-      <div id="input"></div>
+  <header>  
+    <div class ="gradient-border">Calculator</div>  
+  </header>   
+  <div class="calculator-grid">
+    <div class="output">
+      <div class="previous-operand">123 +</div>
+      <div class="current-operand">456</div>
     </div>
-
-    <div class="buttons-grid">
-      <button id="number-0" class="button number">0</button>
-      <button id="number-1" class="button number">1</button>
-      <button id="number-2" class="button number">2</button>
-      <button id="number-3" class="button number">3</button>
-      <button id="number-4" class="button number">4</button>
-      <button id="number-5" class="button number">5</button>
-      <button id="number-6" class="button number">6</button>
-      <button id="number-7" class="button number">7</button>
-      <button id="number-8" class="button number">8</button>
-      <button id="number-9" class="button number">9</button>
-      <button id="multiply" class="button operator">*</button>
-      <button id="divide" class="button operator">/</button>
-      <button id="plus" class="button operator">+</button>
-      <button id="minus" class="button operator">-</button>
-      <button id="equal" class="button equal">=</button>
-      <button id="clear" class="button clear">clear</button>
-    </div>
-  </main>
-
- <script src= 'scripts/app.js'></script>
+    <button class="span-two">AC</button>
+    <button>DEL</button>
+    <button>\</button>
+    <button>7</button>
+    <button>8</button>
+    <button>9</button>
+    <button>x</button>
+    <button>4</button>
+    <button>5</button>
+    <button>6</button>
+    <button>+</button>
+    <button>1</button>
+    <button>2</button>
+    <button>3</button>
+    <button>-</button>
+    <button>.</button>
+    <button>0</button>
+    <button class ="span-two">=</button>
+  </div>
+  <footer>Made by: <a href=https://github.com/lionelroy> <img id="gh-logo" src="images/githublogo.png" alt="github logo"/>Lionel Roy</a></footer>
 </body>
-
 </html>
+
+
